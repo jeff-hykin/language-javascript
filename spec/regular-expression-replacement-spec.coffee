@@ -5,7 +5,7 @@ describe "Regular Expression Replacement grammar", ->
     atom.config.set('core.useTreeSitterParsers', false)
 
     waitsForPromise ->
-      atom.packages.activatePackage("language-javascript")
+      atom.packages.activatePackage("neo-language-javascript")
 
     runs ->
       grammar = atom.grammars.grammarForScopeName("source.js.regexp.replacement")

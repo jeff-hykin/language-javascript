@@ -15,7 +15,7 @@ describe "JavaScript grammar", ->
     atom.config.set('core.useTreeSitterParsers', false)
 
     waitsForPromise ->
-      atom.packages.activatePackage("language-javascript")
+      atom.packages.activatePackage("neo-language-javascript")
 
     runs ->
       grammar = atom.grammars.grammarForScopeName("source.js")
@@ -975,7 +975,7 @@ describe "JavaScript grammar", ->
       expect(lines[2][2]).toEqual value: ' comment ', scopes: ['source.js', 'meta.import.js', 'comment.block.js']
       expect(lines[2][3]).toEqual value: '*/', scopes: ['source.js', 'meta.import.js', 'comment.block.js', 'punctuation.definition.comment.end.js']
 
-      # https://github.com/atom/language-javascript/issues/485
+      # https://github.com/atom/neo-language-javascript/issues/485
       lines = grammar.tokenizeLines '''
         import a from 'a' //
         import b from 'b'

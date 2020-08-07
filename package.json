@@ -1,5 +1,5 @@
 {
-    "name": "language-javascript",
+    "name": "neo-language-javascript",
     "version": "0.135.0",
     "description": "JavaScript language support in Atom",
     "engines": {
@@ -7,14 +7,14 @@
         "node": "*"
     },
     "main": "lib/main",
-    "homepage": "http://atom.github.io/language-javascript",
+    "homepage": "http://atom.github.io/neo-language-javascript",
     "repository": {
         "type": "git",
-        "url": "https://github.com/atom/language-javascript.git"
+        "url": "https://github.com/atom/neo-language-javascript.git"
     },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/atom/language-javascript/issues"
+        "url": "https://github.com/atom/neo-language-javascript/issues"
     },
     "keywords": [
         "tree-sitter"
