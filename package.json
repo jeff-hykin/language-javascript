@@ -10,11 +10,11 @@
     "homepage": "http://atom.github.io/neo-language-javascript",
     "repository": {
         "type": "git",
-        "url": "https://github.com/atom/neo-language-javascript.git"
+        "url": "https://github.com/jeff-hykin/neo-language-javascript.git"
     },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/atom/neo-language-javascript/issues"
+        "url": "https://github.com/jeff-hykin/neo-language-javascript/issues"
     },
     "keywords": [
         "tree-sitter"
