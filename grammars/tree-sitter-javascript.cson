@@ -89,6 +89,12 @@ scopes:
     new_expression > identifier
   ': 'meta.class'
 
+
+  'jsx_element': 'meta.tag'
+  'jsx_opening_element': 'meta.attributes'
+  'jsx_element "<"': 'punctuation.tag'
+  'jsx_element ">"': 'punctuation.tag'
+  'jsx_attribute "="': 'punctuation.separator.key-value'
   '
     jsx_opening_element > identifier,
     jsx_closing_element > identifier,
