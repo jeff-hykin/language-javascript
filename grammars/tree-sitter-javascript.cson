@@ -155,6 +155,7 @@ scopes:
       match: '^[A-Z]',
       scopes: 'entity.name.class'
     },
+    "variable"
   ]
 
   'number': 'constant.numeric'
@@ -199,6 +200,10 @@ scopes:
   # new object
   'object > "{"': 'punctuation.section.bracket.curly punctuation.definition.dictionary'
   'object > "}"': 'punctuation.section.bracket.curly punctuation.definition.dictionary'
+  
+  # object decomposition
+  'variable_declarator > object_pattern > "{"': 'punctuation.section.bracket.curly punctuation.section.decomposition'
+  'variable_declarator > object_pattern > "}"': 'punctuation.section.bracket.curly punctuation.section.decomposition'
 
   # new list
   'array > "["': 'punctuation.section.bracket.square punctuation.definition.array'
@@ -207,20 +212,29 @@ scopes:
   # subscript
   'subscript_expression > "["': 'punctuation.section.bracket.square punctuation.section.subscript'
   'subscript_expression > "]"': 'punctuation.section.bracket.square punctuation.section.subscript'
+  
+  # array decomposition
+  'variable_declarator > array_pattern > "["': 'punctuation.section.bracket.square punctuation.section.decomposition'
+  'variable_declarator > array_pattern > "]"': 'punctuation.section.bracket.square punctuation.section.decomposition'
 
   # function call
+  'arguments': 'meta.arguments'
   'arguments > "("': 'punctuation.section.bracket.round punctuation.section.arguments'
   'arguments > ")"': 'punctuation.section.bracket.round punctuation.section.arguments'
 
   # function definition
-  'function > formal_parameters > "("':       'punctuation.section.bracket.round punctuation.definition.parameters'
-  'function > formal_parameters > ")"':       'punctuation.section.bracket.round punctuation.definition.parameters'
-  'function > statement_block > "{"':         'punctuation.section.bracket.curly punctuation.definition.function.body'
-  'function > statement_block > "}"':         'punctuation.section.bracket.curly punctuation.definition.function.body'
-  'arrow_function > formal_parameters > "("': 'punctuation.section.bracket.round punctuation.definition.parameters'
-  'arrow_function > formal_parameters > ")"': 'punctuation.section.bracket.round punctuation.definition.parameters'
-  'arrow_function > statement_block > "{"':   'punctuation.section.bracket.curly punctuation.definition.function.body'
-  'arrow_function > statement_block > "}"':   'punctuation.section.bracket.curly punctuation.definition.function.body'
+  'function > formal_parameters > "("':          'punctuation.section.bracket.round punctuation.definition.parameters'
+  'function > formal_parameters > ")"':          'punctuation.section.bracket.round punctuation.definition.parameters'
+  'method_definition > formal_parameters > "("': 'punctuation.section.bracket.round punctuation.definition.parameters'
+  'method_definition > formal_parameters > ")"': 'punctuation.section.bracket.round punctuation.definition.parameters'
+  'function > statement_block > "{"':            'punctuation.section.bracket.curly punctuation.definition.function.body'
+  'function > statement_block > "}"':            'punctuation.section.bracket.curly punctuation.definition.function.body'
+  'method_definition > statement_block > "{"':   'punctuation.section.bracket.curly punctuation.definition.function.body'
+  'method_definition > statement_block > "}"':   'punctuation.section.bracket.curly punctuation.definition.function.body'
+  'arrow_function > formal_parameters > "("':    'punctuation.section.bracket.round punctuation.definition.parameters'
+  'arrow_function > formal_parameters > ")"':    'punctuation.section.bracket.round punctuation.definition.parameters'
+  'arrow_function > statement_block > "{"':      'punctuation.section.bracket.curly punctuation.definition.function.body'
+  'arrow_function > statement_block > "}"':      'punctuation.section.bracket.curly punctuation.definition.function.body'
 
   '"var"': 'storage.type'
   '"let"': 'storage.type'
