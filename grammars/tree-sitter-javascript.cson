@@ -56,5 +56,8 @@ comments:
   start: '// '
 
 scopes:
+  '"this"': 'variable.language.this'
+  '"_this"': 'keyword.control'
+  '"self_"': 'variable'
   '"if"': 'keyword.control.if'
-  '"this"': 'keyword.control.this'
+  '"iff"': 'keyword.control'
