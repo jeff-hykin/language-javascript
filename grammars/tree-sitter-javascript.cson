@@ -87,7 +87,7 @@ scopes:
   '
     class > identifier,
     new_expression > identifier
-  ': 'meta.class'
+  ': 'entity.name.class'
 
 
   '
@@ -97,11 +97,11 @@ scopes:
   ': [
     {
       match: '^[A-Z]',
-      scopes: 'meta.class.component.jsx'
+      scopes: 'entity.name.class.component.jsx'
     }
   ]
 
-  'call_expression > identifier': {match: '^[A-Z]', scopes: 'meta.class'}
+  'call_expression > identifier': {match: '^[A-Z]', scopes: 'entity.name.class'}
   'arrow_function > identifier:nth-child(0)': 'variable.parameter.function'
 
   'function > identifier': 'entity.name.function'
@@ -153,7 +153,7 @@ scopes:
     },
     {
       match: '^[A-Z]',
-      scopes: 'meta.class'
+      scopes: 'entity.name.class'
     },
   ]
 
@@ -308,6 +308,7 @@ scopes:
   '"debugger"': 'keyword.control.debugger'
   '"delete"': 'keyword.control.delete'
 
+  'import_statement': 'meta.import'
   'jsx_attribute > property_identifier': 'entity.other.attribute-name'
   'jsx_opening_element > identifier': 'entity.name.tag'
   'jsx_closing_element > identifier': 'entity.name.tag'
@@ -318,5 +319,9 @@ scopes:
   'jsx_element > jsx_opening_element > ">"' : 'punctuation.tag'
   'jsx_element > jsx_closing_element > "<"' : 'punctuation.tag'
   'jsx_element > jsx_closing_element > ">"' : 'punctuation.tag'
+  'jsx_element > jsx_closing_element > "/"' : 'punctuation.tag'
+  'jsx_element > jsx_self_closing_element > "<"' : 'punctuation.tag'
+  'jsx_element > jsx_self_closing_element > ">"' : 'punctuation.tag'
+  'jsx_element > jsx_self_closing_element > "/"' : 'punctuation.tag'
   'jsx_attribute > "="': 'punctuation.separator.key-value'
   'jsx_opening_element': 'meta.attributes'
