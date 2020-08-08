@@ -57,6 +57,8 @@ comments:
 
 scopes:
   '"this"': 'variable.language.this'
+  'expression_statement > "this"': 'variable.language.this'
+  'expression_statement > this': 'variable.language.this'
   '"_this"': 'keyword.control'
   '"self_"': 'variable'
   '"if"': 'keyword.control.if'
