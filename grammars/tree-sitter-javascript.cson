@@ -248,7 +248,7 @@ scopes:
   # '"--"': 'keyword.operator'
   # '"..."': 'keyword.operator.spread'
   # 
-  '"this"': 'variable.language.this'
+  # '"this"': 'variable.language.this'
   # 
   # '"in"': 'keyword.operator.in'
   # '"instanceof"': 'keyword.operator.instanceof'
@@ -260,7 +260,7 @@ scopes:
   # '"set"': 'keyword.operator.setter'
   # 
   # '"as"': 'keyword.control.as'
-  # '"if"': 'keyword.control.if'
+  '"if"': 'keyword.control.if'
   # '"do"': 'keyword.control.do'
   # '"else"': 'keyword.control.else'
   # '"while"': 'keyword.control.while'
