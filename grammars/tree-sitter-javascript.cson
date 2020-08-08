@@ -250,7 +250,6 @@ scopes:
   # 
   '"this"': 'variable.language.this'
   '"_this"': 'keyword.control'
-  '"if_"': 'variable'
   '"self_"': 'variable'
   # 
   # '"in"': 'keyword.operator.in'
@@ -264,6 +263,7 @@ scopes:
   # 
   # '"as"': 'keyword.control.as'
   '"if"': 'keyword.control.if'
+  '"iff"': 'keyword.control.iff'
   # '"do"': 'keyword.control.do'
   # '"else"': 'keyword.control.else'
   # '"while"': 'keyword.control.while'
