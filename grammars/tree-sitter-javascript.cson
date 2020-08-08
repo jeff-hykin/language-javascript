@@ -68,7 +68,7 @@ scopes:
   ]
 
   'member_expression': [
-      { match: '^module.exports', scopes: "support.variable.module.exports" }
+      { match: '^module.exports', scopes: "support.variable.module.exports.object.property.unquoted" }
       'meta.member-access'
   ]
   
