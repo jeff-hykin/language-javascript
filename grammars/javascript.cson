@@ -41,7 +41,7 @@
     (?=\\s|:|$)
   )
 '''
-'name': 'JavaScript'
+'name': 'JavaScript - Neo'
 'patterns': [
   {
     # ES6 import

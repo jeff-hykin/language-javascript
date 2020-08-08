@@ -1,4 +1,4 @@
-name: 'JavaScript'
+name: 'JavaScript - Neo'
 scopeName: 'source.js'
 type: 'tree-sitter'
 parser: 'tree-sitter-javascript'
