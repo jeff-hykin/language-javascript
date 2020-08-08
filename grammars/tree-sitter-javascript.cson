@@ -90,11 +90,6 @@ scopes:
   ': 'meta.class'
 
 
-  'jsx_element': 'meta.tag'
-  'jsx_opening_element': 'meta.attributes'
-  'jsx_element "<"': 'punctuation.tag'
-  'jsx_element ">"': 'punctuation.tag'
-  'jsx_attribute "="': 'punctuation.separator.key-value'
   '
     jsx_opening_element > identifier,
     jsx_closing_element > identifier,
@@ -315,3 +310,9 @@ scopes:
   'jsx_opening_element > identifier': 'entity.name.tag'
   'jsx_closing_element > identifier': 'entity.name.tag'
   'jsx_self_closing_element > identifier': 'entity.name.tag'
+  
+  'jsx_element': 'meta.tag'
+  'jsx_element > "<"': 'punctuation.tag'
+  'jsx_element > ">"': 'punctuation.tag'
+  'jsx_attribute > "="': 'punctuation.separator.key-value'
+  'jsx_opening_element': 'meta.attributes'
