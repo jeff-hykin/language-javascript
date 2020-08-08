@@ -67,6 +67,11 @@ scopes:
     'variable.other.object.property'
   ]
 
+  'member_expression': [
+      { match: '^module.exports', scopes: "support.variable.module.exports" }
+      'meta.member-access'
+  ]
+  
   'member_expression > property_identifier': 'variable.other.object.property.unquoted'
 
   'formal_parameters > identifier': 'variable.parameter.function'
@@ -114,8 +119,24 @@ scopes:
 
   'identifier': [
     {
-      match: '^(global|module|exports|__filename|__dirname)$',
-      scopes: 'support.variable.$match'
+      match: '^global$',
+      scopes: 'support.variable.global'
+    },
+    {
+      match: '^module$',
+      scopes: 'support.variable.module'
+    },
+    {
+      match: '^exports$',
+      scopes: 'support.variable.exports'
+    },
+    {
+      match: '^__filename$',
+      scopes: 'support.variable.__filename'
+    },
+    {
+      match: '^__dirname$',
+      scopes: 'support.variable.__dirname'
     },
     {
       match: '^(window|event|document|performance|screen|navigator|console)$'
