@@ -1,6 +1,6 @@
 {
     "name": "neo-language-javascript",
-    "version": "0.135.17",
+    "version": "0.135.18",
     "description": "JavaScript language support in Atom",
     "engines": {
         "atom": "*",
