@@ -250,7 +250,8 @@ scopes:
   # 
   '"this"': 'variable.language.this'
   '"_this"': 'keyword.control'
-  '"this_"': 'variable'
+  '"if_"': 'variable'
+  '"self_"': 'variable'
   # 
   # '"in"': 'keyword.operator.in'
   # '"instanceof"': 'keyword.operator.instanceof'
