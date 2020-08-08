@@ -172,31 +172,31 @@ scopes:
   # '"["': 'punctuation.section.bracket.square'
   # '"]"': 'punctuation.section.bracket.square'
   # 
-  # # new object
-  # 'object > "{"': 'punctuation.section.bracket.curly punctuation.definition.dictionary'
-  # 'object > "}"': 'punctuation.section.bracket.curly punctuation.definition.dictionary'
-  # 
-  # # new list
-  # 'array > "["': 'punctuation.section.bracket.square punctuation.definition.array'
-  # 'array > "]"': 'punctuation.section.bracket.square punctuation.definition.array'
-  # 
-  # # subscript
-  # 'subscript_expression > "["': 'punctuation.section.bracket.square punctuation.section.subscript'
-  # 'subscript_expression > "]"': 'punctuation.section.bracket.square punctuation.section.subscript'
-  # 
-  # # function call
-  # 'arguments > "("': 'punctuation.section.bracket.round punctuation.section.arguments'
-  # 'arguments > ")"': 'punctuation.section.bracket.round punctuation.section.arguments'
-  # 
-  # # function definition
-  # 'function > formal_parameters > "("':       'punctuation.section.bracket.round punctuation.definition.parameters'
-  # 'function > formal_parameters > ")"':       'punctuation.section.bracket.round punctuation.definition.parameters'
-  # 'function > statement_block > "{"':         'punctuation.section.bracket.curly punctuation.definition.function.body'
-  # 'function > statement_block > "}"':         'punctuation.section.bracket.curly punctuation.definition.function.body'
-  # 'arrow_function > formal_parameters > "("': 'punctuation.section.bracket.round punctuation.definition.parameters'
-  # 'arrow_function > formal_parameters > ")"': 'punctuation.section.bracket.round punctuation.definition.parameters'
-  # 'arrow_function > statement_block > "{"':   'punctuation.section.bracket.curly punctuation.definition.function.body'
-  # 'arrow_function > statement_block > "}"':   'punctuation.section.bracket.curly punctuation.definition.function.body'
+  # new object
+  'object > "{"': 'punctuation.section.bracket.curly punctuation.definition.dictionary'
+  'object > "}"': 'punctuation.section.bracket.curly punctuation.definition.dictionary'
+  
+  # new list
+  'array > "["': 'punctuation.section.bracket.square punctuation.definition.array'
+  'array > "]"': 'punctuation.section.bracket.square punctuation.definition.array'
+  
+  # subscript
+  'subscript_expression > "["': 'punctuation.section.bracket.square punctuation.section.subscript'
+  'subscript_expression > "]"': 'punctuation.section.bracket.square punctuation.section.subscript'
+  
+  # function call
+  'arguments > "("': 'punctuation.section.bracket.round punctuation.section.arguments'
+  'arguments > ")"': 'punctuation.section.bracket.round punctuation.section.arguments'
+  
+  # function definition
+  'function > formal_parameters > "("':       'punctuation.section.bracket.round punctuation.definition.parameters'
+  'function > formal_parameters > ")"':       'punctuation.section.bracket.round punctuation.definition.parameters'
+  'function > statement_block > "{"':         'punctuation.section.bracket.curly punctuation.definition.function.body'
+  'function > statement_block > "}"':         'punctuation.section.bracket.curly punctuation.definition.function.body'
+  'arrow_function > formal_parameters > "("': 'punctuation.section.bracket.round punctuation.definition.parameters'
+  'arrow_function > formal_parameters > ")"': 'punctuation.section.bracket.round punctuation.definition.parameters'
+  'arrow_function > statement_block > "{"':   'punctuation.section.bracket.curly punctuation.definition.function.body'
+  'arrow_function > statement_block > "}"':   'punctuation.section.bracket.curly punctuation.definition.function.body'
   # 
   # '"var"': 'storage.type'
   # '"let"': 'storage.type'
@@ -248,7 +248,9 @@ scopes:
   # '"--"': 'keyword.operator'
   # '"..."': 'keyword.operator.spread'
   # 
-  # '"this"': 'variable.language.this'
+  '"this"': 'variable.language.this'
+  '"_this"': 'keyword.control'
+  '"this_"': 'variable'
   # 
   # '"in"': 'keyword.operator.in'
   # '"instanceof"': 'keyword.operator.instanceof'
