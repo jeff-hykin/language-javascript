@@ -197,6 +197,8 @@ scopes:
   'arrow_function > formal_parameters > ")"': 'punctuation.section.bracket.round punctuation.definition.parameters'
   'arrow_function > statement_block > "{"':   'punctuation.section.bracket.curly punctuation.definition.function.body'
   'arrow_function > statement_block > "}"':   'punctuation.section.bracket.curly punctuation.definition.function.body'
+  
+  'arguments > "this"': 'variable.language'
   # 
   # '"var"': 'storage.type'
   # '"let"': 'storage.type'
@@ -263,7 +265,7 @@ scopes:
   # 
   # '"as"': 'keyword.control.as'
   '"if"': 'keyword.control.if'
-  '"iff"': 'keyword.control.iff'
+  '"iff"': 'keyword.control'
   # '"do"': 'keyword.control.do'
   # '"else"': 'keyword.control.else'
   # '"while"': 'keyword.control.while'
